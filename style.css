@@ -1,0 +1,68 @@
+.tables {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.table,
+.info {
+  height: 40px;
+}
+
+.info {
+  width: 40px;
+}
+
+.categories {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.categorie {
+  height: 30px;
+  font-size: 20px;
+}
+
+.back {
+  height: 30px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.article {
+  height: 50px;
+}
+
+.navigation {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.back,
+.activeTable {
+  height: 50px;
+}
+
+.table-articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.sum {
+  padding-top: 30px;
+  font-size: 30px;
+}
