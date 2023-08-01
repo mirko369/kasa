@@ -456,7 +456,10 @@ const drinks = {
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
-const tablesObj = {
+let tablesObj = {
+  Sank: {
+    article: [],
+  },
   V1: {
     article: [],
   },
@@ -533,6 +536,7 @@ function renderTables() {
     `
     <button class="info">i</button>
     <div class="tables">
+      <button class="table">Sank</button>
       <button class="table">V1</button>
       <button class="table">V2</button>
       <button class="table">V3</button>
@@ -592,6 +596,7 @@ function renderActiveTable() {
     clear();
     renderTables();
     tablesObj[activeTable].article = [];
+    localStorage.setItem("articles", JSON.stringify(tablesObj));
   });
 
   tablesObj[activeTable].article.forEach((el) => {
@@ -680,6 +685,7 @@ function renderCategories() {
         drinks[categorie].price[drinks[categorie].name.indexOf(article)]
       }`;
       tablesObj[activeTable].article.push(str);
+      localStorage.setItem("articles", JSON.stringify(tablesObj));
     });
   });
 }
@@ -690,3 +696,10 @@ let activeTable;
 let categorie;
 
 renderTables();
+getData("articles");
+
+function getData(type) {
+  const storage = localStorage.getItem(type);
+  // if (storage) state[type] = JSON.parse(storage);
+  if (storage) tablesObj = JSON.parse(storage);
+}
