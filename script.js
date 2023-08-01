@@ -490,6 +490,9 @@ const tablesObj = {
   T1_3: {
     article: [],
   },
+  T1_4: {
+    article: [],
+  },
   T2_1: {
     article: [],
   },
@@ -541,6 +544,7 @@ function renderTables() {
       <button class="table">T1_1</button>
       <button class="table">T1_2</button>
       <button class="table">T1_3</button>
+      <button class="table">T1_4</button>
       <button class="table">T2_1</button>
       <button class="table">T2_2</button>
       <button class="table">T2_3</button>
