@@ -169,26 +169,26 @@ const drinks = {
   },
   mixedDrinks: {
     name: [
-      "Smirnoff - Tonic",
-      "Smirnoff - Juice",
-      "Vodka - Tonic",
-      "Gordons - Tonic",
-      "Gin - Tonic",
-      "Rum - Cola",
-      "Bacardi tamni - Cola",
-      "Vodka - Juice",
-      "Jack Daniel's - Cola",
+      "Smirnoff Tonic",
+      "Smirnoff Juice",
+      "Vodka Tonic",
+      "Gordons Tonic",
+      "Gin Tonic",
+      "Rum Cola",
+      "Bacardi tamni Cola",
+      "Vodka Juice",
+      "Jack Daniel's Cola",
       "Jagermeister Cola",
-      "Johnny Walker Red Label - Cola",
-      "Johnny Walker Black Label - Cola",
-      "Ballantines - Cola",
-      "Chivas - Cola",
-      "Jameson - Cola",
-      "Stock - Cola",
-      "Domaći konjak - Cola",
-      "Bacardi bijeli - Cola",
-      "Campari - Juice",
-      "Campari - Mineral water",
+      "Johnny Walker Red Label Cola",
+      "Johnny Walker Black Label Cola",
+      "Ballantines Cola",
+      "Chivas Cola",
+      "Jameson Cola",
+      "Stock Cola",
+      "Domaći konjak Cola",
+      "Bacardi bijeli Cola",
+      "Campari Juice",
+      "Campari Mineral water",
     ],
     price: [
       "5,60 Є",
@@ -700,6 +700,5 @@ getData("articles");
 
 function getData(type) {
   const storage = localStorage.getItem(type);
-  // if (storage) state[type] = JSON.parse(storage);
   if (storage) tablesObj = JSON.parse(storage);
 }
