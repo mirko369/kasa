@@ -931,6 +931,54 @@ function clear() {
   document.body.innerHTML = "";
 }
 
+function renderPin(type) {
+  const password = "8487";
+  let input = "";
+  clear();
+  document.body.insertAdjacentHTML(
+    "beforeend",
+    `
+    <div class="numbers">
+      <button class="num">1</button>
+      <button class="num">2</button>
+      <button class="num">3</button>
+      <button class="num">4</button>
+      <button class="num">5</button>
+      <button class="num">6</button>
+      <button class="num">7</button>
+      <button class="num">8</button>
+      <button class="num">9</button>
+    </div>
+    <div class="options">
+      <button class="enter optionsbtn">Enter</button>
+      <button class="close optionsbtn">Close</button>
+    </div>
+  `
+  );
+
+  document.querySelector(".numbers").addEventListener("click", function (e) {
+    const click = e.target.textContent;
+    input += click;
+  });
+
+  document.querySelector(".enter").addEventListener("click", function () {
+    if (input !== password) {
+      clear();
+      renderTables();
+      return;
+    }
+    clear();
+    if (type === "izvjesce") renderIzvjesce();
+    if (type === "artikli") renderArtikle();
+    else return;
+  });
+
+  document.querySelector(".close").addEventListener("click", function () {
+    clear();
+    renderTables();
+  });
+}
+
 function renderIzvjesce() {
   document.body.insertAdjacentHTML(
     "beforeend",
@@ -991,6 +1039,10 @@ function renderArtikle() {
   });
 }
 
+function checkActive(table) {
+  tablesObj[table].article.length > 0 ? "active" : "";
+}
+
 function renderTables() {
   document.body.insertAdjacentHTML(
     "beforeend",
@@ -1000,40 +1052,84 @@ function renderTables() {
     <button class="artikli info">a</button>
     </div>
     <div class="tables">
-      <button class="table">Sank</button>
-      <button class="table">V1</button>
-      <button class="table">V2</button>
-      <button class="table">V3</button>
-      <button class="table">V4</button>
-      <button class="table">V5</button>
-      <button class="table">V6</button>
-      <button class="table">U1</button>
-      <button class="table">U2</button>
-      <button class="table">T1_1</button>
-      <button class="table">T1_2</button>
-      <button class="table">T1_3</button>
-      <button class="table">T1_4</button>
-      <button class="table">T2_1</button>
-      <button class="table">T2_2</button>
-      <button class="table">T2_3</button>
-      <button class="table">T2_4</button>
-      <button class="table">T2_5</button>
-      <button class="table">T3_1</button>
-      <button class="table">T3_2</button>
-      <button class="table">T3_3</button>
-      <button class="table">T3_4</button>
+      <button class="table ${
+        tablesObj.Sank.article.length > 0 ? "active" : ""
+      }">Sank</button>
+      <button class="table  ${
+        tablesObj.V1.article.length > 0 ? "active" : ""
+      }">V1</button>
+      <button class="table  ${
+        tablesObj.V2.article.length > 0 ? "active" : ""
+      }">V2</button>
+      <button class="table ${
+        tablesObj.V3.article.length > 0 ? "active" : ""
+      }">V3</button>
+      <button class="table ${
+        tablesObj.V4.article.length > 0 ? "active" : ""
+      }">V4</button>
+      <button class="table ${
+        tablesObj.V5.article.length > 0 ? "active" : ""
+      }">V5</button>
+      <button class="table ${
+        tablesObj.V6.article.length > 0 ? "active" : ""
+      }">V6</button>
+      <button class="table ${
+        tablesObj.U1.article.length > 0 ? "active" : ""
+      }">U1</button>
+      <button class="table ${
+        tablesObj.U2.article.length > 0 ? "active" : ""
+      }">U2</button>
+      <button class="table ${
+        tablesObj.T1_1.article.length > 0 ? "active" : ""
+      }">T1_1</button>
+      <button class="table ${
+        tablesObj.T1_2.article.length > 0 ? "active" : ""
+      }">T1_2</button>
+      <button class="table ${
+        tablesObj.T1_3.article.length > 0 ? "active" : ""
+      }">T1_3</button>
+      <button class="table ${
+        tablesObj.T1_4.article.length > 0 ? "active" : ""
+      }">T1_4</button>
+      <button class="table ${
+        tablesObj.T2_1.article.length > 0 ? "active" : ""
+      }">T2_1</button>
+      <button class="table ${
+        tablesObj.T2_2.article.length > 0 ? "active" : ""
+      }">T2_2</button>
+      <button class="table ${
+        tablesObj.T2_3.article.length > 0 ? "active" : ""
+      }">T2_3</button>
+      <button class="table ${
+        tablesObj.T2_4.article.length > 0 ? "active" : ""
+      }">T2_4</button>
+      <button class="table ${
+        tablesObj.T2_5.article.length > 0 ? "active" : ""
+      }">T2_5</button>
+      <button class="table ${
+        tablesObj.T3_1.article.length > 0 ? "active" : ""
+      }">T3_1</button>
+      <button class="table ${
+        tablesObj.T3_2.article.length > 0 ? "active" : ""
+      }">T3_2</button>
+      <button class="table ${
+        tablesObj.T3_3.article.length > 0 ? "active" : ""
+      }">T3_3</button>
+      <button class="table ${
+        tablesObj.T3_4.article.length > 0 ? "active" : ""
+      }">T3_4</button>
     </div>
   `
   );
 
   document.querySelector(".izvjesce").addEventListener("click", function () {
     clear();
-    renderIzvjesce();
+    renderPin("izvjesce");
   });
 
   document.querySelector(".artikli").addEventListener("click", function () {
     clear();
-    renderArtikle();
+    renderPin("artikli");
   });
 
   document.querySelector(".tables").addEventListener("click", function (e) {
@@ -1104,6 +1200,7 @@ function renderCategories() {
     `
     <div class="navigation">
     <button class="back">Back</button>
+    <div class="table-info">${activeTable}</div>
     <button class="activeTable">Table</button>
   </div>
     <div class="categories">
@@ -1150,7 +1247,7 @@ function renderCategories() {
       document.querySelector(".articles").insertAdjacentHTML(
         "beforeend",
         `
-        <button class="article">${el}</button>
+        <button class="article blink">${el}</button>
      `
       );
     });
@@ -1185,16 +1282,15 @@ function renderCategories() {
 let activeTable;
 let categorie;
 
-renderTables();
 getData();
 getDailySum();
 getInventura();
+renderTables();
 
 function getData() {
   const storage = localStorage.getItem("articles");
   if (storage) tablesObj = JSON.parse(storage);
 }
-
 function getDailySum() {
   const sum = localStorage.getItem("dailySum");
   if (sum) dailySum = JSON.parse(sum);
