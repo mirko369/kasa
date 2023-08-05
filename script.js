@@ -1267,6 +1267,8 @@ function renderCategories() {
     document.querySelector(".articles").addEventListener("click", function (e) {
       const click = e.target.textContent;
       const article = click;
+      audio.pause();
+      audio.currentTime = 0;
       audio.play();
 
       const str = `${article} - ${
