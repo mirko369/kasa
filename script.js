@@ -1267,6 +1267,7 @@ function renderCategories() {
     document.querySelector(".articles").addEventListener("click", function (e) {
       const click = e.target.textContent;
       const article = click;
+      audio.play();
 
       const str = `${article} - ${
         drinks[categorie].price[drinks[categorie].name.indexOf(article)]
@@ -1281,6 +1282,7 @@ function renderCategories() {
 
 let activeTable;
 let categorie;
+const audio = new Audio("ping-82822.mp3");
 
 getData();
 getDailySum();
