@@ -853,6 +853,405 @@ let inventura = [
   0,
 ];
 
+let dnevna = [
+  "Karlovačko točeno  0,2 l",
+  0,
+  "Karlovačko točeno 0,3 l",
+  0,
+  "Karlovačko točeno 0,5 l",
+  0,
+  "Karlovačko 0,33 l",
+  0,
+  "Karlovačko 0,5 l",
+  0,
+  "Karlovačko Crno",
+  0,
+  "Karlovačko Radler",
+  0,
+  "Heineken",
+  0,
+  "Ožujsko 0,5 l",
+  0,
+  "Ožujsko 0,33 l",
+  0,
+  "Staropramen",
+  0,
+  "Bezalkoholno pivo",
+  0,
+  "Paulaner",
+  0,
+  "Corona",
+  0,
+  "Malvazija 0,187 l",
+  0,
+  "Malvazija 1,00 l",
+  0,
+  "Graševina 0,187 l",
+  0,
+  "Graševina 1,00 l",
+  0,
+  "Babić 0,187 l",
+  0,
+  "Babić kvalitetno 0,75 l",
+  0,
+  "Pelješac 1,00 l",
+  0,
+  "Zlatan Plavac 0,75 l",
+  0,
+  "Zlatna Žlahtina 0,75 l",
+  0,
+  "Rose 0,187 l",
+  0,
+  "Bottega 0,2 l",
+  0,
+  "Bottega Gold 0,75 l",
+  0,
+  "Bottega Rose Gold 0,75 l",
+  0,
+  "Bottega White Gold 0,75 l",
+  0,
+  "Bottega Gold 1,5 l",
+  0,
+  "Martini Bianco",
+  0,
+  "Martini Rosso",
+  0,
+  "Martini Extra Dry",
+  0,
+  "Amaro",
+  0,
+  "Cherry Brandy",
+  0,
+  "Gin",
+  0,
+  "Lavov",
+  0,
+  "Lozovača",
+  0,
+  "Konjak domaći",
+  0,
+  "Kruškovac",
+  0,
+  "Maraschino",
+  0,
+  "Medica",
+  0,
+  "Orahovac",
+  0,
+  "Pelinkovac",
+  0,
+  "Rum",
+  0,
+  "Stock",
+  0,
+  "Šljivovica",
+  0,
+  "Travarica",
+  0,
+  "Viljamovka",
+  0,
+  "Vodka",
+  0,
+  "Žutuja",
+  0,
+  "Teranino",
+  0,
+  "Pelinkovac Antique",
+  0,
+  "Bacardi tamni",
+  0,
+  "Bacardi bijeli",
+  0,
+  "Bailey's",
+  0,
+  "Ballantines",
+  0,
+  "Campari",
+  0,
+  "Carolans",
+  0,
+  "Chivas Regal 12 Y.O.",
+  0,
+  "Gordons Gin",
+  0,
+  "Hennessy V.S.",
+  0,
+  "Jack Daniel's",
+  0,
+  "Jagermeister",
+  0,
+  "Jameson",
+  0,
+  "Johnny Walker Red Label",
+  0,
+  "Johnny Walker Black Label",
+  0,
+  "Martel V.S",
+  0,
+  "Tequila Silver",
+  0,
+  "Tequila Gold",
+  0,
+  "Vodka Smirnoff",
+  0,
+  "Rémy Martin",
+  0,
+  "Vodka Grey Goose",
+  0,
+  "Smirnoff Tonic",
+  0,
+  "Smirnoff Juice",
+  0,
+  "Vodka Tonic",
+  0,
+  "Gordons Tonic",
+  0,
+  "Gin Tonic",
+  0,
+  "Rum Cola",
+  0,
+  "Bacardi tamni Cola",
+  0,
+  "Vodka Juice",
+  0,
+  "Jack Daniel's Cola",
+  0,
+  "Jagermeister Cola",
+  0,
+  "Johnny Walker Red Label Cola",
+  0,
+  "Johnny Walker Black Label Cola",
+  0,
+  "Ballantines Cola",
+  0,
+  "Chivas Cola",
+  0,
+  "Jameson Cola",
+  0,
+  "Stock Cola",
+  0,
+  "Domaći konjak Cola",
+  0,
+  "Bacardi bijeli Cola",
+  0,
+  "Campari Juice",
+  0,
+  "Campari Mineral water",
+  0,
+  "Rose Lemonade Fetimans",
+  0,
+  "Orangina",
+  0,
+  "Spezi",
+  0,
+  "Pipi",
+  0,
+  "Coca Cola",
+  0,
+  "Fanta",
+  0,
+  "Sprite",
+  0,
+  "Cockta",
+  0,
+  "Tonic Water",
+  0,
+  "Bitter lemon",
+  0,
+  "Ledeni čaj",
+  0,
+  "Cedevita",
+  0,
+  "Prirodni sok",
+  0,
+  "Mineralna voda bočica 0,33 l",
+  0,
+  "Mineralna voda bočica 0,75 l",
+  0,
+  "Mineralna voda aroma",
+  0,
+  "Voda negazirana 0,33 l",
+  0,
+  "Voda negazirana 0,75 l",
+  0,
+  "Limunada",
+  0,
+  "Narančada",
+  0,
+  "Svježe cjeđeni sok",
+  0,
+  "Voda negazirana P 0,5 l",
+  0,
+  "Voda negazirana P 1,5 l",
+  0,
+  "Mineralna voda P 0,5 l",
+  0,
+  "Mineralna voda P 1,5 l",
+  0,
+  "Cola P",
+  0,
+  "Fanta P",
+  0,
+  "Somersby",
+  0,
+  "Red Bull",
+  0,
+  "Kava",
+  0,
+  "Kava s mlijekom",
+  0,
+  "Kava s mlijekom velika",
+  0,
+  "Kava sa šlagom",
+  0,
+  "Kava sa Ledo šlagom",
+  0,
+  "Kava sa šlagom velika",
+  0,
+  "Kava sa Ledo šlagom velika",
+  0,
+  "Kava bez kofeina",
+  0,
+  "Kava bez kofeina s mlijekom",
+  0,
+  "Kava bez kofeina s mlijekom velika",
+  0,
+  "Kava bez kofeina sa šlagom",
+  0,
+  "Kava bez kofeina sa Ledo šlagom",
+  0,
+  "Kava bez kofeina sa šlagom velika",
+  0,
+  "Kava bez kofeina sa Ledo šlagom velika",
+  0,
+  "Cappucino",
+  0,
+  "Cappucino bez kofeina",
+  0,
+  "Kakao",
+  0,
+  "Vruća čokolada",
+  0,
+  "Bijela kava",
+  0,
+  "Bijela kava bez kofeina",
+  0,
+  "Latte Macchiato",
+  0,
+  "Nescaffee",
+  0,
+  "Nescaffee + šlag",
+  0,
+  "Irska kava",
+  0,
+  "Americano",
+  0,
+  "Čaj",
+  0,
+  "Ledena kava sa sladoledom",
+  0,
+  "Punč",
+  0,
+  "Mlijeko",
+  0,
+  "Šlag",
+  0,
+  "Frappe Milkshake",
+  0,
+  "Ledeni sok 0,3 l",
+  0,
+  "Ledeni sok 0,5 l",
+  0,
+  "Ledeni sok + čaša 0,3 l",
+  0,
+  "Ledeni sok + čaša 0,5 l",
+  0,
+  "Sladoled",
+  0,
+  "Sladoled Premium",
+  0,
+  "Slatki kornet",
+  0,
+  "Čokoladni kornet",
+  0,
+  "Pina Colada",
+  0,
+  "Cosmopolitan",
+  0,
+  "Cuba Libre",
+  0,
+  "Mojito",
+  0,
+  "Mojito 1L",
+  0,
+  "Mojito Strawberry",
+  0,
+  "Mojito Blueberry",
+  0,
+  "Long Beach Ice Tea",
+  0,
+  "Margarita",
+  0,
+  "Long Island Ice Tea",
+  0,
+  "Tequila Sunrise",
+  0,
+  "Sex On The Beach",
+  0,
+  "Sex On The Beach 1L",
+  0,
+  "Blue Lagoon",
+  0,
+  "Blue Hawaiian",
+  0,
+  "Caipirinha",
+  0,
+  "White Russian",
+  0,
+  "Aperol Spritz",
+  0,
+  "Caribbean Cruise",
+  0,
+  "Caribbean Cruise 1L",
+  0,
+  "Mai Tai",
+  0,
+  "Zombie",
+  0,
+  "Bahama Mama",
+  0,
+  "Bahama Mama 1L",
+  0,
+  "Negroni",
+  0,
+  "Hugo",
+  0,
+  "Espresso Martini",
+  0,
+  "Little Engineer",
+  0,
+  "Simply Red",
+  0,
+  "Monkey 47",
+  0,
+  "Tanqueray",
+  0,
+  "Hendrick's",
+  0,
+  "Gin Mare",
+  0,
+  "Tanqueray No. 10",
+  0,
+  "Bombay Sapphire",
+  0,
+  "1724 Tonic water",
+  0,
+  "Thomas Henry tonic water",
+  0,
+  "Thomas Henry Cherry Blossom tonic",
+  0,
+];
+
 ////////////////////////////////////////////////////////////////////////////////////////
 
 let dailySum = 0;
@@ -970,6 +1369,7 @@ function renderPin(type) {
     clear();
     if (type === "izvjesce") renderIzvjesce();
     if (type === "artikli") renderArtikle();
+    if (type === "dnevna") renderDnevna();
     else return;
   });
 
@@ -999,6 +1399,12 @@ function renderIzvjesce() {
   document.querySelector(".reset").addEventListener("click", function () {
     dailySum = 0;
     localStorage.setItem("dailySum", JSON.stringify(dailySum));
+
+    for (let i = 1; i < dnevna.length; i += 2) {
+      dnevna[i] = 0;
+    }
+    localStorage.setItem("dnevna", JSON.stringify(dnevna));
+
     clear();
     renderTables();
   });
@@ -1015,6 +1421,7 @@ function renderArtikle() {
     <div class="box"></div>
     `
   );
+  console.log(inventura);
   for (let i = 0; i < inventura.length; i += 2) {
     document.querySelector(".box").insertAdjacentHTML(
       "beforeend",
@@ -1022,7 +1429,7 @@ function renderArtikle() {
     <div>${inventura[i]} - ${inventura[i + 1]}</div>
     `
     );
-  }
+  }  
 
   document.querySelector(".reset").addEventListener("click", function () {
     for (let i = 1; i < inventura.length; i += 2) {
@@ -1032,6 +1439,31 @@ function renderArtikle() {
     clear();
     renderTables();
   });
+
+  document.querySelector(".home").addEventListener("click", function () {
+    clear();
+    renderTables();
+  });
+}
+
+function renderDnevna() {
+  document.body.insertAdjacentHTML(
+    "beforeend",
+    `
+  <div class="navigation">
+    <button class="home info">Back</button>
+    </div>
+    <div class="box"></div>
+    `
+  );
+  for (let i = 0; i < dnevna.length; i += 2) {
+    document.querySelector(".box").insertAdjacentHTML(
+      "beforeend",
+      `
+    <div>${dnevna[i]} - ${dnevna[i + 1]}</div>
+    `
+    );
+  }  
 
   document.querySelector(".home").addEventListener("click", function () {
     clear();
@@ -1119,8 +1551,17 @@ function renderTables() {
         tablesObj.T3_4.article.length > 0 ? "active" : ""
       }">T3_4</button>
     </div>
+    <div class="navigation">
+    <button class="dnevna info">d</button>
+    <button class="tips info">t</button>
+    </div>
   `
   );
+
+  document.querySelector(".dnevna").addEventListener("click", function () {
+    clear();
+    renderPin("dnevna");
+  });
 
   document.querySelector(".izvjesce").addEventListener("click", function () {
     clear();
@@ -1175,9 +1616,11 @@ function renderActiveTable() {
     dailySum += sum;
     tablesObj[activeTable].article.forEach((e) => {
       inventura[inventura.indexOf(e.split(" - ")[0]) + 1] += 1;
+      dnevna[dnevna.indexOf(e.split(" - ")[0]) + 1] += 1;
     });
     tablesObj[activeTable].article = [];
     localStorage.setItem("inventura", JSON.stringify(inventura));
+    localStorage.setItem("dnevna", JSON.stringify(dnevna));
     localStorage.setItem("dailySum", JSON.stringify(dailySum));
     localStorage.setItem("articles", JSON.stringify(tablesObj));
     clear();
@@ -1289,6 +1732,7 @@ const audio = new Audio("ping-82822.mp3");
 getData();
 getDailySum();
 getInventura();
+getDnevna();
 renderTables();
 
 function getData() {
@@ -1302,4 +1746,8 @@ function getDailySum() {
 function getInventura() {
   const list = localStorage.getItem("inventura");
   if (list) inventura = JSON.parse(list);
+}
+function getDnevna() {
+  const list = localStorage.getItem("dnevna");
+  if (list) dnevna = JSON.parse(list);
 }
