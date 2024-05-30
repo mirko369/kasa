@@ -1497,8 +1497,12 @@ function renderTips()
 
     if(isNaN(Number(sum))) return;
 
-    tips += Number(sum);
+    tips *= 10;
+    sum = Number(sum) * 10;
+    tips += sum;
+    tips /= 10;
     sum = "";
+    
     document.querySelector(".tip").innerHTML = tips + "Є + ";
     localStorage.setItem("tips", JSON.stringify(tips));
   })
