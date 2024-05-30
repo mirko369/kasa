@@ -1255,6 +1255,7 @@ let dnevna = [
 ////////////////////////////////////////////////////////////////////////////////////////
 
 let dailySum = 0;
+let tips = 0;
 
 let tablesObj = {
   Sank: {
@@ -1349,13 +1350,15 @@ function renderPin(type) {
       <button class="num">9</button>
     </div>
     <div class="options">
-      <button class="enter optionsbtn">Enter</button>
-      <button class="close optionsbtn">Close</button>
+    <button class="enter optionsbtn">Enter</button>
+    <button class="close optionsbtn">Close</button>
     </div>
   `
   );
 
   document.querySelector(".numbers").addEventListener("click", function (e) {
+    if(e.target.className === "numbers") return;
+
     const click = e.target.textContent;
     input += click;
   });
@@ -1421,7 +1424,7 @@ function renderArtikle() {
     <div class="box"></div>
     `
   );
-  console.log(inventura);
+
   for (let i = 0; i < inventura.length; i += 2) {
     document.querySelector(".box").insertAdjacentHTML(
       "beforeend",
@@ -1441,6 +1444,73 @@ function renderArtikle() {
   });
 
   document.querySelector(".home").addEventListener("click", function () {
+    clear();
+    renderTables();
+  });
+}
+
+function renderTips()
+{
+  let sum = "";
+  document.body.insertAdjacentHTML(
+    "beforeend",
+    `
+    <div class="tip">${tips} Є + </div>
+    <div class="numbers">
+    <button class="num">1</button>
+    <button class="num">2</button>
+    <button class="num">3</button>
+    <button class="num">4</button>
+    <button class="num">5</button>
+    <button class="num">6</button>
+    <button class="num">7</button>
+    <button class="num">8</button>
+    <button class="num">9</button>
+    <button class="num">Clear</button>
+    <button class="num">0</button>
+    <button class="num">.</button>
+  </div>
+  <div class="options">
+  <button class="close optionsbtn">Close</button>
+  <button class="reset optionsbtn">Reset</button>
+  <button class="enter optionsbtn">Enter</button>
+  </div>
+    `
+  );
+
+  document.querySelector(".numbers").addEventListener("click",function(e){
+    if(e.target.className === "numbers") return;
+
+    if(e.target.textContent === "Clear")
+      {
+        sum = "";
+        document.querySelector(".tip").innerHTML = tips + "Є + ";
+        return;
+      }
+
+    let input =  e.target.textContent;
+    sum += input;
+    document.querySelector(".tip").innerHTML += input;
+  })
+
+  document.querySelector(".enter").addEventListener("click",function(){
+
+    if(isNaN(Number(sum))) return;
+
+    tips += Number(sum);
+    sum = "";
+    document.querySelector(".tip").innerHTML = tips + "Є + ";
+    localStorage.setItem("tips", JSON.stringify(tips));
+  })
+
+  document.querySelector(".reset").addEventListener("click", function () {
+    tips = 0;
+    sum = "";
+    document.querySelector(".tip").innerHTML = tips + "Є + ";
+    localStorage.setItem("tips", JSON.stringify(tips));
+  });
+
+  document.querySelector(".close").addEventListener("click", function () {
     clear();
     renderTables();
   });
@@ -1558,6 +1628,11 @@ function renderTables() {
   `
   );
 
+  document.querySelector(".tips").addEventListener("click", function () {
+    clear();
+    renderTips();
+  });
+
   document.querySelector(".dnevna").addEventListener("click", function () {
     clear();
     renderPin("dnevna");
@@ -1574,6 +1649,8 @@ function renderTables() {
   });
 
   document.querySelector(".tables").addEventListener("click", function (e) {
+    if(e.target.className === "tables") return;
+
     const click = e.target.textContent;
     activeTable = click;
 
@@ -1675,6 +1752,8 @@ function renderCategories() {
   });
 
   document.querySelector(".categories").addEventListener("click", function (e) {
+    if(e.target.className === "categories") return;
+
     const click = e.target.textContent;
     categorie = click;
 
@@ -1708,6 +1787,8 @@ function renderCategories() {
       });
 
     document.querySelector(".articles").addEventListener("click", function (e) {
+      if(e.target.className === "articles") return;
+
       const click = e.target.textContent;
       const article = click;
       audio.pause();
@@ -1734,6 +1815,7 @@ getDailySum();
 getInventura();
 getDnevna();
 renderTables();
+getTips();
 
 function getData() {
   const storage = localStorage.getItem("articles");
@@ -1750,4 +1832,8 @@ function getInventura() {
 function getDnevna() {
   const list = localStorage.getItem("dnevna");
   if (list) dnevna = JSON.parse(list);
+}
+function getTips() {
+  const list = localStorage.getItem("tips");
+  if (list) tips = JSON.parse(list);
 }
