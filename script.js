@@ -350,13 +350,14 @@ const drinks = {
   },
   coldDrinks: {
     name: [
+      "Bubble Tea",
       "Frappe Milkshake",
       "Ledeni sok 0,3 l",
       "Ledeni sok 0,5 l",
       "Ledeni sok + čaša 0,3 l",
       "Ledeni sok + čaša 0,5 l",
     ],
-    price: ["5,00 Є", "5,00 Є", "6,50 Є", "8,50 Є", "10,00 Є"],
+    price: ["6,00 Є","5,00 Є", "5,00 Є", "6,50 Є", "8,50 Є", "10,00 Є"],
   },
   sweets: {
     name: ["Sladoled", "Sladoled Premium", "Slatki kornet", "Čokoladni kornet"],
@@ -757,6 +758,8 @@ let inventura = [
   0,
   "Šlag",
   0,
+  "Bubble Tea",
+  0,
   "Frappe Milkshake",
   0,
   "Ledeni sok 0,3 l",
@@ -1155,6 +1158,8 @@ let dnevna = [
   "Mlijeko",
   0,
   "Šlag",
+  0,
+  "Bubble Tea",
   0,
   "Frappe Milkshake",
   0,
@@ -1841,3 +1846,17 @@ function getTips() {
   const list = localStorage.getItem("tips");
   if (list) tips = JSON.parse(list);
 }
+
+function putNewArticle()
+{
+  inventura.push("Bubble Tea");
+  inventura.push(0);
+  dnevna.push("Bubble Tea");
+  dnevna.push(0);
+}
+
+if(!inventura.includes("Bubble Tea") && !dnevna.includes("Bubble Tea"))
+{
+  putNewArticle();
+}
+
