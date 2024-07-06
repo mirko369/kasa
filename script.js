@@ -1513,10 +1513,32 @@ function renderTips()
   })
 
   document.querySelector(".reset").addEventListener("click", function () {
-    tips = 0;
-    sum = "";
-    document.querySelector(".tip").innerHTML = tips + "Є + ";
-    localStorage.setItem("tips", JSON.stringify(tips));
+    clear();
+    document.body.insertAdjacentHTML("beforeend",
+      `
+      <h1>Jeste li sigurni da želite uzeti manču bez da platite porez i da tako oštetite državu i Plenkovića</h1>
+      <div class="options">
+      <button class="lopovluk optionsbtn">Lopovluk Lopovština</button>
+      <button class="nisam optionsbtn">Ja Nisam</button>
+      </div>
+      `
+    )
+    document.querySelector(".options").addEventListener("click",function(e){
+      if(e.target.textContent === "Lopovluk Lopovština")
+      {
+        tips = 0;
+        sum = "";
+        localStorage.setItem("tips", JSON.stringify(tips));
+        clear();
+        renderTips();
+      }
+
+      if(e.target.textContent === "Ja Nisam")
+      {
+        clear();
+        renderTips();
+      }
+    })
   });
 
   document.querySelector(".close").addEventListener("click", function () {
