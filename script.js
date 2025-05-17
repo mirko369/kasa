@@ -1,7 +1,7 @@
 const drinks = {
   beer: {
     name: [
-      "Karlovačko točeno  0,2 l",
+      "Karlovačko točeno 0,2 l",
       "Karlovačko točeno 0,3 l",
       "Karlovačko točeno 0,5 l",
       "Karlovačko 0,33 l",
@@ -219,7 +219,7 @@ const drinks = {
       "Orangina",
       "Spezi",
       "Pipi",
-      "Coca Cola , Coca Cola Zero",
+      "Coca Cola",
       "Fanta",
       "Sprite",
       "Cockta",
@@ -228,11 +228,11 @@ const drinks = {
       "Ledeni čaj",
       "Cedevita",
       "Prirodni sokovi",
-      "Mineralna voda bočica",
-      "Mineralna voda bočica",
+      "Mineralna voda bočica 0,33 l",
+      "Mineralna voda bočica 0,75 l",
       "Mineralna voda aroma",
-      "Voda negazirana",
-      "Voda negazirana",
+      "Voda negazirana 0,33 l",
+      "Voda negazirana 0,75 l",
       "Limunada",
       "Narančada",
       "Svježe cijeđeni sok",
