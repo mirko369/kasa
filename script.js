@@ -227,7 +227,7 @@ const drinks = {
       "Bitter lemon",
       "Ledeni čaj",
       "Cedevita",
-      "Prirodni sokovi",
+      "Prirodni sok",
       "Mineralna voda bočica 0,33 l",
       "Mineralna voda bočica 0,75 l",
       "Mineralna voda aroma",
