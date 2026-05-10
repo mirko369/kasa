@@ -15,20 +15,22 @@ const drinks = {
       "Bezalkoholno pivo",
       "Paulaner",
       "Corona",
+      "Guinness"
     ],
     price: [
-      "2,70 Є",
-      "4,40 Є",
-      "5,40 Є",
-      "4,40 Є",
-      "5,40 Є",
-      "5,40 Є",
-      "5,40 Є",
-      "5,50 Є",
-      "4,40 Є",
-      "5,40 Є",
-      "4,70 Є",
+      "2,90 Є",
       "4,60 Є",
+      "5,60 Є",
+      "4,60 Є",
+      "5,60 Є",
+      "5,60 Є",
+      "5,60 Є",
+      "5,70 Є",
+      "4,60 Є",
+      "5,60 Є",
+      "4,90 Є",
+      "4,80 Є",
+      "7,00 Є",
       "7,00 Є",
       "7,00 Є",
     ],
@@ -55,16 +57,16 @@ const drinks = {
       "Martini Extra Dry",
     ],
     price: [
-      "7,50 Є",
+      "7,80 Є",
       "25,00 Є",
-      "7,50 Є",
+      "7,80 Є",
       "25,00 Є",
-      "7,50 Є",
+      "7,80 Є",
       "25,00 Є",
       "20,00 Є",
       "48,00 Є",
       "45,00 Є",
-      "7,50 Є",
+      "7,80 Є",
       "11,00 Є",
       "70,00 Є",
       "70,00 Є",
@@ -99,26 +101,26 @@ const drinks = {
       "Pelinkovac Antique",
     ],
     price: [
-      "2,50 Є",
-      "2,50 Є",
-      "3,00 Є",
-      "2,50 Є",
-      "2,20 Є",
-      "2,50 Є",
-      "2,50 Є",
-      "2,50 Є",
-      "2,50 Є",
-      "2,20 Є",
-      "2,20 Є",
-      "2,20 Є",
-      "2,20 Є",
-      "2,20 Є",
-      "2,20 Є",
-      "2,20 Є",
-      "2,20 Є",
-      "2,20 Є",
-      "3,70 Є",
-      "2,50 Є",
+      "2,60 Є",
+      "2,60 Є",
+      "3,10 Є",
+      "2,60 Є",
+      "2,30 Є",
+      "2,60 Є",
+      "2,60 Є",
+      "2,60 Є",
+      "2,60 Є",
+      "2,30 Є",
+      "2,30 Є",
+      "2,30 Є",
+      "2,30 Є",
+      "2,30 Є",
+      "2,30 Є",
+      "2,30 Є",
+      "2,30 Є",
+      "2,30 Є",
+      "3,80 Є",
+      "2,60 Є",
     ],
   },
   importedAlcohol: {
@@ -215,7 +217,7 @@ const drinks = {
   },
   beverages: {
     name: [
-      "Rose Lemonade Fetimans",
+      "Lemonish",
       "Orangina",
       "Spezi",
       "Pipi",
@@ -245,28 +247,28 @@ const drinks = {
       "Fanta P",
     ],
     price: [
-      "6,50 Є",
       "4,80 Є",
-      "4,60 Є",
-      "4,60 Є",
-      "4,60 Є",
-      "4,60 Є",
-      "4,60 Є",
-      "4,60 Є",
-      "4,60 Є",
-      "4,60 Є",
-      "4,00 Є",
-      "2,80 Є",
+      "5,00 Є",
+      "4,80 Є",
+      "4,80 Є",
+      "4,80 Є",
+      "4,80 Є",
+      "4,80 Є",
+      "4,80 Є",
+      "4,80 Є",
+      "4,80 Є",
       "4,20 Є",
-      "2,90 Є",
-      "5,70 Є",
-      "3,00 Є",
       "2,80 Є",
-      "5,50 Є",
-      "6,00 Є",
-      "7,50 Є",
+      "4,40 Є",
+      "3,10 Є",
+      "5,90 Є",
+      "3,20 Є",
+      "3,00 Є",
+      "5,70 Є",
+      "6,60 Є",
+      "7,70 Є",
       "8,50 Є",
-      "4,60 Є",
+      "4,80 Є",
       "3,00 Є",
       "5,00 Є",
       "3,00 Є",
@@ -277,11 +279,11 @@ const drinks = {
   },
   cider: {
     name: ["Somersby"],
-    price: ["6,50 Є"],
+    price: ["5,00 Є"],
   },
   energyDrinks: {
     name: ["Red Bull"],
-    price: ["6,40 Є"],
+    price: ["5,00 Є"],
   },
   warmDrinks: {
     name: [
@@ -313,37 +315,39 @@ const drinks = {
       "Punč",
       "Mlijeko",
       "Šlag",
+      "Affogato",
     ],
 
     price: [
-      "1,80 Є",
       "1,90 Є",
+      "2,00 Є",
+      "2,40 Є",
+      "2,00 Є",
       "2,30 Є",
-      "1,90 Є",
       "2,20 Є",
-      "2,10 Є",
-      "2,20 Є",
-      "2,60 Є",
       "2,30 Є",
-      "2,50 Є",
-      "5,00 Є",
-      "5,50 Є",
-      "5,00 Є",
-      "5,50 Є",
-      "3,30 Є",
-      "4,00 Є",
-      "2,60 Є",
       "2,70 Є",
+      "2,40 Є",
+      "2,60 Є",
+      "5,50 Є",
+      "5,50 Є",
+      "5,00 Є",
+      "5,50 Є",
+      "3,40 Є",
+      "4,10 Є",
+      "2,70 Є",
+      "2,80 Є",
       "6,00 Є",
       "3,00 Є",
       "3,10 Є",
       "7,00 Є",
-      "3,50 Є",
-      "2,00 Є",
+      "3,70 Є",
+      "2,10 Є",
       "7,50 Є",
-      "2,00 Є",
-      "1,20 Є",
-      "0,80 Є",
+      "2,10 Є",
+      "1,30 Є",
+      "0,90 Є",
+      "5,00 Є",
     ],
   },
   coldDrinks: {
@@ -355,11 +359,11 @@ const drinks = {
       "Ledeni sok + čaša 0,3 l",
       "Ledeni sok + čaša 0,5 l",
     ],
-    price: ["6,50 Є","5,00 Є", "5,50 Є", "7,00 Є", "9,00 Є", "11,00 Є"],
+    price: ["6,50 Є","5,00 Є", "6,00 Є", "7,50 Є", "10,00 Є", "12,00 Є"],
   },
   sweets: {
     name: ["Sladoled", "Sladoled Premium", "Slatki kornet", "Čokoladni kornet"],
-    price: ["2,80 Є", "3,20 Є", "1,00 Є", "1,70 Є"],
+    price: ["2,90 Є", "3,40 Є", "1,00 Є", "1,70 Є"],
   },
   cocktails: {
     name: [
@@ -393,43 +397,47 @@ const drinks = {
       "Bebbo",
       "Zec Scn",
       "White Russian",
+      "Porn Star Martini",
+      "Campari Spritz",
       "Little Engineer",
       "Simply Red",
     ],
 
     price: [
+      "12,50 Є",
+      "11,00 Є",
+      "12,50 Є",
+      "12,50 Є",
+      "35,00 Є",
+      "12,50 Є",
+      "12,50 Є",
+      "13,50 Є",
+      "11,00 Є",
+      "13,50 Є",
+      "12,50 Є",
+      "12,50 Є",
+      "35,00 Є",
+      "12,50 Є",
+      "12,50 Є",
+      "12,50 Є",
       "12,00 Є",
-      "10,50 Є",
+      "13,50 Є",
+      "38,00 Є",
+      "13,50 Є",
+      "13,50 Є",
+      "13,50 Є",
+      "38,00 Є",
       "12,00 Є",
+      "12,50 Є",
+      "12,50 Є",
+      "12,50 Є",
+      "12,50 Є",
+      "12,50 Є",
+      "12,50 Є",
+      "12,50 Є",
       "12,00 Є",
-      "33,00 Є",
-      "12,00 Є",
-      "12,00 Є",
-      "13,00 Є",
-      "10,50 Є",
-      "13,00 Є",
-      "12,00 Є",
-      "12,00 Є",
-      "33,00 Є",
-      "12,00 Є",
-      "12,00 Є",
-      "12,00 Є",
-      "11,50 Є",
-      "13,00 Є",
-      "37,00 Є",
-      "13,00 Є",
-      "13,00 Є",
-      "13,00 Є",
-      "37,00 Є",
-      "11,50 Є",
-      "12,00 Є",
-      "12,00 Є",
-      "12,00 Є",
-      "12,00 Є",
-      "12,00 Є",
-      "12,00 Є",
-      "10,00 Є",
-      "10,00 Є",
+      "11,00 Є",
+      "11,00 Є",
     ],
   },
 
@@ -1893,6 +1901,19 @@ function putNewArticle()
   inventura.push(0);
   inventura.push("Tanqueray Blackcurrant Royale");
   inventura.push(0);
+  inventura.push("Guinness");
+  inventura.push(0);
+  inventura.push("Affogato");
+  inventura.push(0);
+  inventura.push("Lemonish");
+  inventura.push(0);
+  inventura.push("Porn Star Martini");
+  inventura.push(0);
+  inventura.push("Campari Spritz");
+  inventura.push(0);
+  inventura.unshift(0);
+  inventura.unshift("Karlovačko točeno 0,2 l");
+
 
   dnevna.push("Paper Plane");
   dnevna.push(0);
@@ -1910,10 +1931,24 @@ function putNewArticle()
   dnevna.push(0);
   dnevna.push("Tanqueray Blackcurrant Royale");
   dnevna.push(0);
-  
+  dnevna.push("Guinness");
+  dnevna.push(0);
+  dnevna.push("Affogato");
+  dnevna.push(0);
+  dnevna.push("Lemonish");
+  dnevna.push(0);
+  dnevna.push("Porn Star Martini");
+  dnevna.push(0);
+  dnevna.push("Campari Spritz");
+  dnevna.push(0);
+  dnevna.unshift(0);
+  dnevna.unshift("Karlovačko točeno 0,2 l");
 }
 
-if(!inventura.includes("Paper Plane") && !dnevna.includes("Paper Plane"))
+if(!inventura.includes("Karlovačko točeno 0,2 l") && !dnevna.includes("Karlovačko točeno 0,2 l"))
 {
   putNewArticle();
 }
+
+
+
