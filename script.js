@@ -273,8 +273,8 @@ const drinks = {
       "5,00 Є",
       "3,00 Є",
       "5,00 Є",
-      "4,50 Є",
-      "4,50 Є",
+      "3,00 Є",
+      "3,00 Є",
     ],
   },
   cider: {
@@ -363,7 +363,7 @@ const drinks = {
   },
   sweets: {
     name: ["Sladoled", "Sladoled Premium", "Slatki kornet", "Čokoladni kornet"],
-    price: ["2,90 Є", "3,40 Є", "1,00 Є", "1,70 Є"],
+    price: ["3,00 Є", "3,50 Є", "1,00 Є", "1,70 Є"],
   },
   cocktails: {
     name: [
