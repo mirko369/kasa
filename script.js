@@ -362,8 +362,8 @@ const drinks = {
     price: ["6,50 Є","5,00 Є", "6,00 Є", "7,50 Є", "10,00 Є", "12,00 Є"],
   },
   sweets: {
-    name: ["Sladoled", "Sladoled Premium", "Slatki kornet", "Čokoladni kornet"],
-    price: ["3,00 Є", "3,50 Є", "1,00 Є", "1,70 Є"],
+    name: ["Sladoled", "Sladoled Premium", "Slatki kornet", "Čokoladni kornet","Pistacio kornet","Kakao kornet"],
+    price: ["3,00 Є", "3,50 Є", "1,50 Є", "2,00 Є", "2,20 Є", "2,20 Є"],
   },
   cocktails: {
     name: [
